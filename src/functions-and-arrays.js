@@ -18,8 +18,8 @@ const words = [
 function findLongestWord(arr) {
   if (!arr.length) return null;
 
-  index = 0;
-  longest = 0;
+  let index = 0;
+  let longest = 0;
   arr.forEach((element, i) => {
     if (element.length > longest) {
       index = i;
@@ -33,7 +33,7 @@ function findLongestWord(arr) {
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(arr) {
-  sum = 0;
+  let sum = 0;
   arr.forEach((e) => (sum += e));
   return sum;
 }
@@ -60,7 +60,6 @@ const words2 = [
 ];
 
 function doesWordExist(arr, word) {
-  console.log(word, arr);
   if (!arr.length) return null;
 //   arr.forEach((e) => {
 //     console.log("Check: ", e, word, e === word);
